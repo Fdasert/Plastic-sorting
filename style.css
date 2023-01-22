@@ -1,9 +1,117 @@
-body {
-  height: 2000px;
-  background-color: #eee
+@font-face {
+    font-family: "BitterPro-Black";
+    font-style: normal;
+    font-weight: 400;
+    src: local("BitterPro-Black"),
+    url("/fonts/BitterPro-Black.woff2") format("woff2"),
+    url("/fonts/BitterPro-Black.ttf") format("ttf");
 }
-div {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+* {
+    background-color: #e3f0ff;
+}
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: "BitterPro-Black", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    z-index: 2;
+}
+.header__image {
+    background-image: url(./img/90287B5E-0D9D-4120-B0E1-1D2FF24E3873-750x441.webp);
+    z-index: 5;
+}
+.header__title {
+    font-weight: 400;
+    line-height: 80px;
+    font-size: 102px;
+    z-index: 1;
+}
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  margin: 0;
+}
+.table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.table__heading-first {
+    text-align: center;
+    font-size: 80px;
+}
+.table__heading {
+    align-self: center;
+}
+.table__cell {
+    width: 525px;
+    height: 625px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-bottom: 60px;
+}
+.table__image {
+    width: 300px;
+    height: 320px;
+    background-image: #e3f0ff;
+    margin: 0;
+    align-self: center;
+}
+.table__title {
+    width: 200px;
+    margin: 0;
+    align-self: center;
+}
+.program {
+    display: flex;
+}
+.section__headers {
+    display: flex;
+    justify-content: space-around;
+}
+.header__title-small {
+    font-weight: 400;
+    line-height: 64px;
+    font-size: 80px;
+    text-align: center  ;
+}
+.section__number-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    overflow: hidden;
+    margin-top: 50px;
+    min-height: 150px;
+    width: 1903px;
+    box-sizing: border-box;
+    background: #1F1F1F;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.footer__author {
+    color: #fff;
+    background-color: #1F1F1F;
+    padding-left: 24px;
+}
+.grinpeace {
+    text-decoration: none;
+    color:rgb(61, 219, 13);
+}
+.grinpeace:hover {
+    opacity: 0.5;
 }
