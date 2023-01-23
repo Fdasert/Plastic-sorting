@@ -17,12 +17,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .header {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
     z-index: 2;
+    background-image: url(YQjNpPOYxwn0NkoQ9g89N23H5l2jheAF5J3VqIiPOKrHXBuol3nGELiUVcmiSWenUGLQULs8Mo-oND6I39AGN9Tt.jpg);
 }
 .header__image {
     background-image: url(./img/90287B5E-0D9D-4120-B0E1-1D2FF24E3873-750x441.webp);
