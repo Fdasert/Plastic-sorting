@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сортировка пластика</title>
-    <script src="index.js">
-    </script>
   <link rel="stylesheet" href="normalize.css"> 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./itc-slider/itc-slider.css">
 </head>
-<div class="page">
+<div class="page"> 
 <body>
     <header class="header">
+    <div class="image">
     <a href="#" class="header_logo-link">
-                    <img src="./img/Layer 1.svg" alt=""> </a>
+    <img src="./img/Layer 1.svg" alt=""></a>
     <div class="header__image"></div>
     <h1 class="header__title">Семь вещей, которые вы не знали о пластике и его утилизации.</h1>
     <p class="header__subtitle">С каждым днем проблема загрязнения окружающей среды и ухудшения экологического состояния планеты становится все более острой. Разнообразные отходы люди производят и отправляют на свалки каждый день, покрывая поверхность земли и океанов тоннами мусора, сотнями лет отравляющего землю, воду и воздух.</p>
+    </div>
     </header>
     <section class="section__nubmer-one">
         <h2 class="table__heading-first">Классификация пластика</h2>
@@ -120,6 +121,28 @@
         </ul>
     </nav>
     </section>
+    <section class="photo">
+        <div class="itc-slider">
+            <div class="itc-slider" data-slider="itc-slider">...</div>
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000">  
+          <div class="itc-slider__wrapper">
+            <div class="itc-slider__items">
+              <div class="itc-slider__item">
+                <img class="grid-item" src="./grid/7c5r9_UMJQjH4XQKM8xxJvi9Yb_OGMLV5IuAq3ng9VM9rFe5Isr5dSCZf8k6yFOTz8C3QXGzg5_rVjE_vhkpWc69.jpg">
+              </div>
+              <div class="itc-slider__item">
+                <img class="grid-item" src="./grid/h3Q3mypmt-LImxJZeIUfo8nldnkrHgm0MY1CLnmdNd7nsain1dwjxeyaUjAGASo5CoR5fnZeFLSF5Y4yrzCrobAS.jpg">
+              </div>
+              <div class="itc-slider__item">
+                <img class="grid-item" src="./grid/mqkgFKkCsNjDNi0FOOZIPZXTnwn2DYSHJe7OvcbHtvsCSNZhvi0tkcFXmP-P0oFYtt-JOadfcWGcD_mcx4Om4tup.jpg">
+              </div>
+            </div>
+          </div>
+          <button class="itc-slider__btn itc-slider__btn_prev"></button>
+          <button class="itc-slider__btn itc-slider__btn_next"></button>
+        </div>
+                </div>
+    </section>
     <section class="section__number-three">
         <h2 class="header__title-small">Что же делать с пластиком после сортировки?</h2>
         <p class="subtitle">На данной карте представлены пункты приёма вторсырья, это одна из многих карт пунктов приёма, самая крупная из них сайт <a href="https://recyclemap.ru/spb?ysclid=ld494i5n1514196992" class="grinpeace">Гринпис</a></p>
@@ -128,6 +151,8 @@
     <footer class="footer">
         <p class="footer__author">&#169; Артемий Фокин</p>
     </footer>
+    <script src="index.js"></script>
+    <script src="./itc-slider/itc-slider.js" defer></script>
 </body>
 </div>
 </html>
