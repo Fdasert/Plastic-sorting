@@ -6,6 +6,11 @@
     url("/fonts/BitterPro-Black.woff2") format("woff2"),
     url("/fonts/BitterPro-Black.ttf") format("ttf");
 }
+body {
+    background-image: url(./img/15f8153cb5f61ff9bfad853c2966eb6d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .page {
     min-width: 1100px;
     max-width: 1600px;
@@ -14,7 +19,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e3f0ff;}
+    background-color: #e3f0ff;
+}
 .header {
     display: flex;
     flex-direction: column;
@@ -42,14 +48,15 @@
 .header__title {
     font-weight: 400;
     line-height: 80px;
-    font-size: 96px;
+    font-size: 84px;
     z-index: 1;
 }
 .header__subtitle {
-  font-size: 25px;
+  font-size: 22px;
   line-height: 25px;
   font-weight: normal;
   margin: 0;
+  padding: 10px;
 }
 .table {
     display: flex;
@@ -58,7 +65,7 @@
 }
 .table__heading-first {
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
 }
 .table__heading {
     align-self: center;
@@ -71,6 +78,9 @@
     flex-direction: column;
     align-self: center;
     padding-bottom: 60px;
+}
+.table__cell:nth-child(7) {
+    margin: 0 auto;
 }
 .table__image {
     width: 300px;
@@ -94,7 +104,7 @@
 .header__title-small {
     font-weight: 400;
     line-height: 64px;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center  ;
 }
 .section__number-three {
